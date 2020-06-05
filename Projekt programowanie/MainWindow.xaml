@@ -1,0 +1,16 @@
+﻿<Window x:Class="Projekt_programowanie.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_programowanie"
+        WindowStartupLocation="CenterScreen"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label Foreground="DarkBlue" x:Name="Squalaxy" FontSize="48" FontWeight="ExtraBold" Margin="240,39,239.6,277" Content="   Squalaxy"/>
+        <Button Name="startButton" FontSize="20" FontWeight="Bold" Margin="240,148,239.6,209" Click="startClick">start</Button>
+        <Button Name="scoreButton" FontSize="20" FontWeight="Bold" Margin="240,237,239.6,120" Click="scoresClick">score</Button>
+        <Button Name ="exitButton" FontSize="20" FontWeight="Bold" Margin="240,326,239.6,31"  Click="exitClick">exit</Button>
+    </Grid>
+</Window>

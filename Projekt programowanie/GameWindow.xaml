@@ -1,0 +1,17 @@
+﻿<Window x:Class="Projekt_programowanie.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Projekt_programowanie"
+        WindowStartupLocation="CenterScreen"
+
+        mc:Ignorable="d"
+        Title="Squalaxy" Height="500" Width="800" FocusManager.FocusedElement="{Binding ElementName=myCanvas}">
+    <Canvas Name="myCanvas" Background="Black" Focusable="True">
+
+        <Label Foreground="White" Name="HUD" FontSize="16" FontWeight="ExtraBold">HUD:</Label>
+
+        <Rectangle Name="player" Fill="White" Height="45" Width="45" Canvas.Left="378" Canvas.Top="379" />
+    </Canvas>
+</Window>

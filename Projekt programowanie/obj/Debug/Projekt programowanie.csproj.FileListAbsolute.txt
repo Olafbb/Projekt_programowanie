@@ -1,0 +1,19 @@
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\MainWindow.g.cs
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\App.g.cs
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie_MarkupCompile.cache
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie_MarkupCompile.lref
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie.csprojAssemblyReference.cache
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\GameWindow.g.cs
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\ScoreWindow.g.cs
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\bin\Debug\Projekt programowanie.exe.config
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\bin\Debug\Projekt programowanie.exe
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\bin\Debug\Projekt programowanie.pdb
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\MainWindow.baml
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\GameWindow.baml
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\ScoreWindow.baml
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie.g.resources
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt_programowanie.Properties.Resources.resources
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie.csproj.GenerateResource.cache
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie.csproj.CoreCompileInputs.cache
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie.exe
+C:\Users\olafb\source\repos\Projekt programowanie\Projekt programowanie\obj\Debug\Projekt programowanie.pdb
