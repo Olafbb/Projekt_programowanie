@@ -9,6 +9,7 @@ using System.Runtime.Serialization;
 
 namespace Projekt_programowanie
 {
+    //klasa do serializowania/deserializowania wyników
     [Serializable()]
     public class Score : ISerializable
     {

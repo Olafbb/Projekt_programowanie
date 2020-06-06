@@ -17,17 +17,18 @@ namespace Projekt_programowanie
         private Position position;
 
         private List<Rectangle> meteors;
-
+        //konstruktor
         public Meteors(List<Rectangle> meteors, Canvas canvas)
         {
+            //przypisywanie zmiennych do pól w klasie
             this.canvas = canvas;
             this.position = new Position(canvas);
             this.meteors = meteors;
         }
-
-        public void create(int number)
+        //tworzenie meteorów w ilości numberOfMeteors
+        public void create(int numberOfMeteors)
         {
-            for (int i = 0; i < number; i++)
+            for (int i = 0; i < numberOfMeteors; i++)
             {
                 Rectangle meteor = new Rectangle();
                 meteor.Height = 20;
@@ -48,6 +49,7 @@ namespace Projekt_programowanie
             }
         }
 
+        //logika odpowiedzialna za ruch meteorów
         public void move()
         {
             foreach (Rectangle meteor in meteors)

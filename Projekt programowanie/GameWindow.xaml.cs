@@ -17,6 +17,7 @@ using System.Windows.Threading;
 
 namespace Projekt_programowanie
 {
+    //gra
     public partial class GameWindow : Window
     {
         private DispatcherTimer gameTimer = new DispatcherTimer();
@@ -35,8 +36,10 @@ namespace Projekt_programowanie
         private Star star;
         private Position position;
         private Collision collision;
+        //konstruktor
         public GameWindow()
         {
+            //przypisywanie do zmiennych w klasie/ tworzenie nowych instancji
             InitializeComponent();
             controls = new PlayerControls(myCanvas, player, playerProjectilesList);
             playerProjectiles = new PlayerProjectiles(playerProjectilesList);
@@ -60,6 +63,7 @@ namespace Projekt_programowanie
             heart.create(1);
             star.create(1);
         }
+        //logika gry
         private void gameEngine(object sender, EventArgs e)
         {
             controls.createKeyListeners();
@@ -82,6 +86,7 @@ namespace Projekt_programowanie
                 HUD.Content = "Score: " + collision.getScore() + " Life: " + collision.getLifes() + " Enemies: " + enemiesList.Count;
             }
         }
+        //utrudnienie gry
         private void impediment(object sender, EventArgs e)
         {
             enemy.create(1);

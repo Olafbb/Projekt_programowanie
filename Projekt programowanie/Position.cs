@@ -17,18 +17,19 @@ namespace Projekt_programowanie
         {
             this.canvas = canvas;
         }
-
+        //losowe położenie na planszy na osi y (oś x nie jest tak losowa, obiekty nie pojawiały się nagle na środku planszy)
         public void setNewRandomPosition(Rectangle image)
         {
             Canvas.SetTop(image, random.Next(-100, 0));
             Canvas.SetLeft(image, random.Next(100, 700));
         }
 
+        //odrzucanie obiektu z planszy
         public void rejectImage(Rectangle image)
         {
             canvas.Children.Remove(image);
         }
-
+        //jeśli obiekty jak przeciwnicy, serca czy pociski przeciwników wychodzą poza planszę są one wtedy usuwane lub losowe ustawiane od nowa
         public void checkAndRelocateGameElements(int height, List<Rectangle> playerProjectilesList, List<Rectangle> meteors, List<Rectangle> enemies, List<Rectangle> enemiesProjectileList, List<Rectangle> heartsList)
         {
             foreach (Rectangle meteor in meteors)

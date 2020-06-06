@@ -19,9 +19,6 @@ using System.Xml.Serialization;
 
 namespace Projekt_programowanie
 {
-    /// <summary>
-    /// Logika interakcji dla klasy ScoreWindow.xaml
-    /// </summary>
     public partial class ScoreWindow : Window
     {
         public ScoreWindow()

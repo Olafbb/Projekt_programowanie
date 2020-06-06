@@ -15,12 +15,15 @@ using System.Windows.Shapes;
 
 namespace Projekt_programowanie
 {
+    //menu
     public partial class MainWindow : Window
     {
+        //konstruktor
         public MainWindow()
         {
             InitializeComponent();
         }
+        //logiki guzików w menu
         private void startClick(object sender, RoutedEventArgs e)
         {
             GameWindow game = new GameWindow();

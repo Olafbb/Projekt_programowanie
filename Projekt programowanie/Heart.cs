@@ -16,14 +16,17 @@ namespace Projekt_programowanie
         private Canvas canvas;
         ImageBrush heartImage = new ImageBrush();
         private List<Rectangle> hearts;
-
+        //konstruktor
         public Heart(Position position, Canvas canvas, List<Rectangle> hearts)
         {
+            //przypisywanie zmiennych do pól w klasie / tworzenie nowych instancji
             this.position = position;
             this.canvas = canvas;
             this.hearts = hearts;
+            //przypisanie obrazka do tworzonych obiektów
             heartImage.ImageSource = new BitmapImage(new Uri("pack://application:,,,/images/heart_model.png"));
         }
+        //tworzenie przeciwników w ilości numberOfHearts
         public void create(int numberOfHearts)
         {
             for (int i = 0; i < numberOfHearts; i++)
@@ -37,6 +40,7 @@ namespace Projekt_programowanie
                 hearts.Add(heart);
             }
         }
+        //logika odpowiedzialna za ruch serc
         public void move()
         {
             foreach (Rectangle heart in hearts)

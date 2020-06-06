@@ -18,13 +18,16 @@ namespace Projekt_programowanie
 
         private List<Rectangle> enemies;
         private List<Rectangle> enemyProjectiles;
+        //konstruktor
         public Enemy(Canvas canvas, List<Rectangle> enemies, List<Rectangle> enemyProjectiles)
         {
+            //przypisywanie zmiennych do pól w klasie / tworzenie nowych instancji
             this.canvas = canvas;
             this.position = new Position(canvas);
             this.enemies = enemies;
             this.enemyProjectiles = enemyProjectiles;
         }
+        //tworzenie przeciwników w ilości numberOfEnemies
         public void create(int numberOfEnemies)
         {
             for (int i = 0; i < numberOfEnemies; i++)
@@ -38,6 +41,7 @@ namespace Projekt_programowanie
                 canvas.Children.Add(enemy);
             }
         }
+        //logika odpowiedzialna za ruch przeciwników
         public void move()
         {
             foreach (Rectangle enemy in enemies)
@@ -46,6 +50,7 @@ namespace Projekt_programowanie
                 Canvas.SetTop(enemy, Canvas.GetTop(enemy) + 2);
             }
         }
+        //logika odpowiedzialna za strzelanie przeciwników
         public void shoot()
         {
             foreach (Rectangle enemy in enemies)
@@ -63,7 +68,7 @@ namespace Projekt_programowanie
                 }
             }
         }
-
+        //logika odpowiedzialna za ruch pocisków przeciwników
         public void moveProjectile()
         {
             foreach (Rectangle enemyProjectile in enemyProjectiles)

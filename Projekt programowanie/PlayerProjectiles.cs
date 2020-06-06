@@ -15,6 +15,7 @@ namespace Projekt_programowanie
         {
             this.projectiles = projectiles;
         }
+        //logika odpowiedzalna za ruch pocisków gracza
         public void move()
         {
             foreach (Rectangle projectile in projectiles)

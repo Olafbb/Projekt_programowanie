@@ -26,7 +26,9 @@ namespace Projekt_programowanie
         private bool isSpaceKeyPressed;
         private List<Rectangle> projectiles;
         private DispatcherTimer reloadTimer = new DispatcherTimer();
+        //konstruktor
         public PlayerControls(Canvas canvas, Rectangle player1, List<Rectangle> projectiles)
+        //przypisywanie zmiennych do pól w klasie / tworzenie nowych instancji
         {
             this.canvas = canvas;
             this.player1 = player1;
@@ -40,6 +42,7 @@ namespace Projekt_programowanie
             initKeysUp();
 
         }
+        //logika ruchu gracza
         public void playerManeuvering()
         {
             if (isLeftKeyPressed && !isRightKeyPressed && Canvas.GetLeft(player1) > 0)
@@ -92,6 +95,7 @@ namespace Projekt_programowanie
                 projectiles.Add(playerProjectile);
             }
         }
+        //logika odpowiedzalna za odczytywanie wciśniętych klawiszy (sterowanie)
         private void initKeysDown()
         {
             if (Keyboard.IsKeyDown(Key.Left))
@@ -138,6 +142,7 @@ namespace Projekt_programowanie
                 isSpaceKeyPressed = false;
             }
         }
+        //przeładowanie broni (bez tego jest za łatwo :P)
         private void reload(object sender, EventArgs e)
         {
             reloadTimer.Stop();

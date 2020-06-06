@@ -14,6 +14,7 @@ namespace Projekt_programowanie
     {
         public void saveScore(Score score)
         {
+            //jeśli plik nie istnieje -> stwórz go i zapisz score
             if (!File.Exists("score.xml"))
             {
                 XmlWriterSettings xmlWriterSettings = new XmlWriterSettings();
@@ -35,9 +36,12 @@ namespace Projekt_programowanie
                 }
             }
             else
+            //jeśli plik istnieje
             {
+                //załaduj dokument
                 XDocument xDocument = XDocument.Load("score.xml");
                 XElement root = xDocument.Element("Root");
+                //iteracja w roocie po Score
                 IEnumerable<XElement> rows = root.Descendants("Score");
                 XElement firstRow = rows.First();
                 firstRow.AddBeforeSelf(
